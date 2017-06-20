@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MARS.Core", "MARS.Core\MARS.Core.csproj", "{B005C59D-45A7-4FC3-AE5B-9BC3D10F66E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MARS.Business", "MARS.Business\MARS.Business.csproj", "{B8497599-DC63-4F6F-AC5A-6D68ECC69986}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MARS.Tests", "MARS.Tests\MARS.Tests.csproj", "{E97C9292-72EA-4A9C-8972-04D22340E9E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B005C59D-45A7-4FC3-AE5B-9BC3D10F66E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B005C59D-45A7-4FC3-AE5B-9BC3D10F66E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B005C59D-45A7-4FC3-AE5B-9BC3D10F66E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B005C59D-45A7-4FC3-AE5B-9BC3D10F66E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8497599-DC63-4F6F-AC5A-6D68ECC69986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8497599-DC63-4F6F-AC5A-6D68ECC69986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8497599-DC63-4F6F-AC5A-6D68ECC69986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8497599-DC63-4F6F-AC5A-6D68ECC69986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E97C9292-72EA-4A9C-8972-04D22340E9E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E97C9292-72EA-4A9C-8972-04D22340E9E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E97C9292-72EA-4A9C-8972-04D22340E9E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E97C9292-72EA-4A9C-8972-04D22340E9E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
