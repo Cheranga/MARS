@@ -58,8 +58,7 @@ namespace MARS.Business
             //
             // Check whether the position returned is within bounds. If it's set it as the new position, otherwise no need to anything
             //
-            if ((position.X >= 0 && position.Y >= 0) &&
-                (position.X <= _bounds.X && position.Y <= _bounds.Y))
+            if (IsWithinBounds(position))
             {
                 _current = position;
             }
