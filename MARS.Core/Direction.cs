@@ -6,6 +6,9 @@ namespace MARS.Core
         N = 0,
         E = 1,
         S = 2,
-        W = 3
+        W = 3,
+
+        Up = 4,
+        Down = 5
     }
 }

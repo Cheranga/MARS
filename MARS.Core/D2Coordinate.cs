@@ -1,4 +1,6 @@
-﻿namespace MARS.Core
+﻿using System.Security.Policy;
+
+namespace MARS.Core
 {
     public class D2Coordinate
     {
