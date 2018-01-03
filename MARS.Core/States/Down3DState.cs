@@ -1,4 +1,3 @@
-using System;
 using MARS.Core.Interfaces;
 
 namespace MARS.Core.States
@@ -7,11 +6,9 @@ namespace MARS.Core.States
     {
         public Direction Direction
         {
-            get
-            {
-                return Direction.Down;
-            }
+            get { return Direction.Down; }
         }
+
         public I3DState TurnLeft()
         {
             return new West3DState();

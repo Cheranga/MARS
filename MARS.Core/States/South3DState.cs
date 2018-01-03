@@ -6,11 +6,9 @@ namespace MARS.Core.States
     {
         public Direction Direction
         {
-            get
-            {
-                return Direction.S;
-            }
+            get { return Direction.S; }
         }
+
         public I3DState TurnLeft()
         {
             return new West3DState();
@@ -33,7 +31,7 @@ namespace MARS.Core.States
 
         public D3Coordinate Move<T>(T @object, D3Coordinate currentCoordinate) where T : ISpeed
         {
-            return new D3Coordinate(currentCoordinate.X, currentCoordinate.Y-@object.Speed, currentCoordinate.Z);
+            return new D3Coordinate(currentCoordinate.X, currentCoordinate.Y - @object.Speed, currentCoordinate.Z);
         }
     }
 }

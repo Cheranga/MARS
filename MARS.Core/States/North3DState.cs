@@ -6,10 +6,7 @@ namespace MARS.Core.States
     {
         public Direction Direction
         {
-            get
-            {
-                return Direction.N;
-            }
+            get { return Direction.N; }
         }
 
         public I3DState TurnLeft()

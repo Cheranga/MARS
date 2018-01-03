@@ -14,10 +14,6 @@ namespace MARS.Core.States
             return new Down3DState();
         }
 
-        public D3Coordinate Move<T>(T @object, D3Coordinate currentCoordinate) where T : ISpeed
-        {
-            return new D3Coordinate(currentCoordinate.X + @object.Speed, currentCoordinate.Y, currentCoordinate.Z);
-        }
 
         public I3DState TurnLeft()
         {
@@ -32,6 +28,11 @@ namespace MARS.Core.States
         public I3DState TurnUp()
         {
             return new Up3DState();
+        }
+
+        public D3Coordinate Move<T>(T @object, D3Coordinate currentCoordinate) where T : ISpeed
+        {
+            return new D3Coordinate(currentCoordinate.X + @object.Speed, currentCoordinate.Y, currentCoordinate.Z);
         }
     }
 }

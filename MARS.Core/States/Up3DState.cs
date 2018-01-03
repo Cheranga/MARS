@@ -1,4 +1,3 @@
-using System;
 using MARS.Core.Interfaces;
 
 namespace MARS.Core.States
