@@ -1,37 +1,44 @@
+using System;
 using MARS.Core.Interfaces;
 
 namespace MARS.Core.States
 {
-    public class North3DState : I3DState
+    public class North3DState : IGenericState
     {
         public Direction Direction
         {
             get { return Direction.N; }
         }
 
-        public I3DState TurnLeft()
+        public IGenericState TurnLeft()
         {
             return new West3DState();
         }
 
-        public I3DState TurnRight()
+        public IGenericState TurnRight()
         {
             return new East3DState();
         }
 
-        public I3DState TurnUp()
+        public IGenericState TurnUp()
         {
             return new Up3DState();
         }
 
-        public I3DState TurnDown()
+        public IGenericState TurnDown()
         {
             return new Down3DState();
         }
 
-        public D3Coordinate Move<T>(T @object, D3Coordinate currentCoordinate) where T : ISpeed
+        public ICoordinate Move<T>(T @object, ICoordinate currentCoordinate) where T : ISpeed
         {
-            return new D3Coordinate(currentCoordinate.X, currentCoordinate.Y + @object.Speed, currentCoordinate.Z);
+            var d3Coordinate = currentCoordinate as D3Coordinate;
+            if (d3Coordinate == null)
+            {
+                throw new NotSupportedException("Only 3D coordinations are supported");
+            }
+
+            return new D3Coordinate(d3Coordinate.X, d3Coordinate.Y + @object.Speed, d3Coordinate.Z);
         }
     }
 }

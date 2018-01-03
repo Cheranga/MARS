@@ -33,7 +33,7 @@ namespace MARS.Tests
             // Arrange
             //
             var handler = new Handler<Rover>(5, 5);
-            var rover = new Rover {Id = "1", Name = "A"};
+            var rover = new Rover { Id = "1", Name = "A" };
             //
             // Act
             //
@@ -58,7 +58,7 @@ namespace MARS.Tests
             // Arrange
             //
             var handler = new Handler<Rover>(5, 5);
-            var rover = new Rover {Id = "1", Name = "A"};
+            var rover = new Rover { Id = "1", Name = "A" };
             //
             // Act
             //

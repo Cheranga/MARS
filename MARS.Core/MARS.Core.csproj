@@ -43,7 +43,12 @@
     <Compile Include="D2Coordinate.cs" />
     <Compile Include="D3Coordinate.cs" />
     <Compile Include="Direction.cs" />
+    <Compile Include="Interfaces\GenericHandler.cs" />
     <Compile Include="Interfaces\I3DHandler.cs" />
+    <Compile Include="Interfaces\I3DState.cs" />
+    <Compile Include="Interfaces\ICoordinate.cs" />
+    <Compile Include="Interfaces\IGenericHandler.cs" />
+    <Compile Include="Interfaces\IGenericState.cs" />
     <Compile Include="Interfaces\IHandler.cs" />
     <Compile Include="States\Down3DState.cs" />
     <Compile Include="States\East3DState.cs" />
